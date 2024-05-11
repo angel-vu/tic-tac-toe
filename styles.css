@@ -1,0 +1,53 @@
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+/* Board */
+.container div {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    grid-gap: 6px; 
+}
+
+/* Cell */
+.container div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #bdbbbb; 
+    font-size: 36px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+/* X and O */
+.X {
+    color: #ff5858; 
+}
+
+.O {
+    color: #4a90e2; 
+}
+
+/* Button */
+.button {
+    margin-top: 20px; 
+    padding: 15px 20px; 
+    background-color: #4caf50; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.button:hover {
+    background-color: #207924; 
+}
